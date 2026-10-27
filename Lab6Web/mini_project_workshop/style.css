@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(160deg, #e6f1ff 0%, #f6f9ff 60%);
+  color: #1f2a3c;
+  line-height: 1.5;
+}
+.wadah { max-width: 900px; margin: 0 auto; padding: 24px 16px 48px; }
+header h1 { color: #173f75; margin: 0 0 4px; font-size: 1.7rem; }
+header p { margin: 0 0 20px; color: #4a5a70; }
+
+.grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 20px; align-items: start; }
+form, .ringkasan {
+  background: #fff; border: 1px solid #d9e2ef; border-radius: 12px; padding: 20px 22px;
+}
+.field { margin-bottom: 14px; }
+label { display: block; font-weight: 600; margin-bottom: 4px; }
+input, select, textarea {
+  width: 100%; padding: 9px 11px; font: inherit;
+  border: 1px solid #b8c4d6; border-radius: 6px; background: #fff;
+}
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid #3478c8; outline-offset: 1px;
+}
+.is-invalid { border-color: #b3261e; background: #fff6f5; }
+.is-valid { border-color: #1e7a3c; }
+small { display: block; margin-top: 4px; font-size: .85rem; }
+.error { color: #b3261e; min-height: 1em; }
+.info { color: #4a5a70; }
+
+.aksi { display: flex; gap: 10px; margin-top: 6px; }
+button { font: inherit; padding: 9px 20px; border-radius: 6px; border: 0; cursor: pointer; }
+.utama { background: #3478c8; color: #fff; }
+.utama:hover { background: #173f75; }
+.sekunder { background: #e8edf5; color: #1f2a3c; }
+.sekunder:hover { background: #d4dce9; }
+
+.pesan { margin: 14px 0 0; padding: 0; font-weight: 600; }
+.pesan.sukses { color: #1e7a3c; background: #e8f6ec; border-left: 4px solid #1e7a3c; padding: 10px 12px; }
+.pesan.gagal  { color: #b3261e; background: #fdecea; border-left: 4px solid #b3261e; padding: 10px 12px; }
+
+.ringkasan h2 { margin: 0 0 10px; font-size: 1.1rem; color: #173f75; }
+dl { margin: 0; }
+dt { font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; color: #687386; margin-top: 10px; }
+dd { margin: 2px 0 0; word-break: break-word; }
+
+@media (max-width: 700px) {
+  .grid { grid-template-columns: 1fr; }
+  header h1 { font-size: 1.4rem; }
+  .aksi { flex-direction: column; }
+  button { width: 100%; }
+}

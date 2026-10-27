@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Praktikum DOM dan Event</title>
+ <link rel="stylesheet" href="style.css">
+ <script src="script.js" defer></script>
+</head>
+<body>
+ <main>
+  <!-- Latihan 1 dan 2 -->
+  <div id="area12" class="kartu">
+   <h1 id="judul">Latihan DOM</h1>
+   <p class="label-latihan">Latihan 1 &amp; 2 — Mengubah teks dan event click</p>
+   <p id="pesan">Belum ada tindakan.</p>
+   <button id="tombolAksi" type="button">Klik Saya</button>
+  </div>
+
+  <!-- Latihan 3 -->
+  <section id="latihan3" class="kartu">
+   <h2>Latihan 3 — Mengubah kelas dan gaya CSS</h2>
+   <p id="teksGaya">Teks ini akan berubah gayanya saat tombol ditekan.</p>
+   <button id="tombolGaya" type="button">Ubah Gaya</button>
+  </section>
+
+  <!-- Latihan 4 -->
+  <section id="latihan4" class="kartu">
+   <h2>Latihan 4 — Event input dan penghitung karakter</h2>
+   <label for="namaInput">Nama:</label>
+   <input type="text" id="namaInput" maxlength="40">
+   <p>Jumlah karakter: <span id="jumlahKarakter">0</span></p>
+  </section>
+
+  <!-- Latihan 5 -->
+  <section id="latihan5" class="kartu">
+   <h2>Latihan 5 — Validasi form pendaftaran</h2>
+   <form id="formPendaftaran" novalidate>
+    <label for="nama">Nama lengkap</label>
+    <input id="nama" name="nama" type="text">
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email">
+    <label for="usia">Usia</label>
+    <input id="usia" name="usia" type="number" min="17" max="100">
+    <button type="submit">Daftar</button>
+   </form>
+   <p id="pesanForm" aria-live="polite"></p>
+  </section>
+
+  <!-- Latihan 6 + Eksperimen 1 -->
+  <section id="latihan6" class="kartu">
+   <h2>Latihan 6 — Daftar tugas sederhana (To-do List)</h2>
+   <label for="inputTugas">Tugas baru</label>
+   <input id="inputTugas" type="text">
+   <button id="tambahTugas" type="button">Tambah</button>
+   <p id="pesanTugas" aria-live="polite"></p>
+   <ul id="daftarTugas"></ul>
+  </section>
+
+  <!-- Eksperimen 4 -->
+  <section id="eksperimen4" class="kartu">
+   <h2>Eksperimen 4 — Sembunyikan / tampilkan paragraf</h2>
+   <button id="tombolSembunyi" type="button">Sembunyikan Paragraf</button>
+   <p id="paragrafToggle">Paragraf ini dapat disembunyikan dan ditampilkan kembali menggunakan class CSS <code>.sembunyi</code>.</p>
+  </section>
+ </main>
+</body>
+</html>
